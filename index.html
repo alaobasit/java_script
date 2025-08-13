@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+</head>
+
+<body>
+    <script>
+        // 1.Discount Checker
+        let total = 4500;
+
+        if (total > 5000) {
+            console.log("You get a 10% discount!");
+        } else if (total >= 3000 && total <= 5000) {
+            console.log("You get a 5% discount!");
+        } else {
+            console.log("No discount, sorry!");
+        }
+
+        // 2. Traffic Light
+
+        let color = "yellow"; 
+
+        switch (color.toLowerCase()) {
+            case "red":
+                console.log("Stop!");
+                break;
+            case "yellow":
+                console.log("Get ready...");
+                break;
+            case "green":
+                console.log("Go!");
+                break;
+            default:
+                console.log("Invalid color");
+        }
+
+        // 3. Exam Result
+        let score = 65; 
+
+        let result = score >= 70
+            ? "Distinction"
+            : score >= 50
+                ? "Pass"
+                : "Fail";
+
+        console.log(result);
+
+        //4. Salary Checker 
+        let salary = 120000;
+
+        if (salary >= 200000) {
+            console.log("You are well-paid!");
+        } else if (salary >= 100000) {
+            console.log("You're doing okay.");
+        } else {
+            console.log("Keep pushing!");
+        }
+
+        // 5. Temperature Checker 
+        let temperature = 25; 
+
+        if (temperature > 30) {
+            console.log("Hot");
+        } else if (temperature >= 20) {
+            console.log("Warm");
+        } else if (temperature >= 10) {
+            console.log("Cool");
+        } else {
+            console.log("Cold");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
