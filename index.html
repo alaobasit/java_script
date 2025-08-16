@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JS Assignment</title>
 </head>
-<body>
 
-  <h1>Welcome to JavaScript Practice</h1>
-  
-  <script src="script.js"></script>
+<body>
+  <script>
+    // Assignment 1 – Display Student Scores with Capitalized Subject
+    let student = {
+      math: 85,
+      science: 90,
+      english: 88
+    };
+
+    for (let subject in student) {
+      let capitalized = subject.charAt(0).toUpperCase() + subject.slice(1);
+      console.log(`${capitalized} score is ${student[subject]}`);
+    }
+    // Assignment 2 – FizzBuzz Challenge
+    for (let i = 1; i <= 100; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (i % 3 === 0) {
+        console.log("Fizz");
+      } else if (i % 5 === 0) {
+        console.log("Buzz");
+      } else {
+        console.log(i);
+      }
+    }
+    // Assignment 3 – Count Occurrences of Letter 'a'
+    let word = "banana";
+    let count = 0;
+
+    for (let char of word) {
+      if (char === 'a') {
+        count++;
+      }
+    }
+
+    console.log(`The letter 'a' appears ${count} times.`);
+    // Assignment 4 – Display the Current Month Number
+    let currentDate = new Date();
+    let monthNumber = currentDate.getMonth() + 1; // +1 because months are 0–11
+    console.log(`Current month is ${monthNumber}`);
+
+
+  </script>
 </body>
+
 </html>
